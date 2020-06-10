@@ -134,85 +134,81 @@ class _InputPageState extends State<InputPage> {
             child: Row(
               children: <Widget>[
                 SmallBox(
-                  cardWidget: Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text(
-                          'Weight',
-                          style: GoogleFonts.atma(fontSize: 20.0),
-                        ),
-                        Text(
-                          weight.toString(),
-                          style: kHeightFontStyle,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            RoundIconButton(
-                                icon: FontAwesomeIcons.plus,
-                                onPressed: () {
-                                  setState(() {
-                                    weight++;
-                                  });
-                                }),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            RoundIconButton(
-                                icon: FontAwesomeIcons.minus,
-                                onPressed: () {
-                                  setState(() {
-                                    weight--;
-                                  });
-                                }),
-                          ],
-                        )
-                      ],
-                    ),
+                  cardWidget: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Weight',
+                        style: GoogleFonts.atma(fontSize: 20.0),
+                      ),
+                      Text(
+                        weight.toString(),
+                        style: kHeightFontStyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
+                              onPressed: () {
+                                setState(() {
+                                  weight++;
+                                });
+                              }),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          RoundIconButton(
+                              icon: FontAwesomeIcons.minus,
+                              onPressed: () {
+                                setState(() {
+                                  weight--;
+                                });
+                              }),
+                        ],
+                      )
+                    ],
                   ),
                   colour: kColorOfCard,
                 ),
                 SmallBox(
-                  cardWidget: Expanded(
-                    child: Column(
-                      mainAxisAlignment: MainAxisAlignment.center,
-                      children: <Widget>[
-                        Text(
-                          'Age',
-                          style: GoogleFonts.atma(fontSize: 20.0),
-                        ),
-                        Text(
-                          age.toString(),
-                          style: kHeightFontStyle,
-                        ),
-                        Row(
-                          mainAxisAlignment: MainAxisAlignment.center,
-                          children: <Widget>[
-                            RoundIconButton(
-                                icon: FontAwesomeIcons.plus,
-                                onPressed: () {
-                                  setState(() {
-                                    age++;
-                                  });
-                                }),
-                            SizedBox(
-                              width: 10,
-                            ),
-                            RoundIconButton(
-                              icon: FontAwesomeIcons.minus,
+                  cardWidget: Column(
+                    mainAxisAlignment: MainAxisAlignment.center,
+                    children: <Widget>[
+                      Text(
+                        'Age',
+                        style: GoogleFonts.atma(fontSize: 20.0),
+                      ),
+                      Text(
+                        age.toString(),
+                        style: kHeightFontStyle,
+                      ),
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.center,
+                        children: <Widget>[
+                          RoundIconButton(
+                              icon: FontAwesomeIcons.plus,
                               onPressed: () {
-                                setState(
-                                  () {
-                                    age--;
-                                  },
-                                );
-                              },
-                            ),
-                          ],
-                        )
-                      ],
-                    ),
+                                setState(() {
+                                  age++;
+                                });
+                              }),
+                          SizedBox(
+                            width: 10,
+                          ),
+                          RoundIconButton(
+                            icon: FontAwesomeIcons.minus,
+                            onPressed: () {
+                              setState(
+                                () {
+                                  age--;
+                                },
+                              );
+                            },
+                          ),
+                        ],
+                      )
+                    ],
                   ),
                   colour: kColorOfCard,
                 )
