@@ -176,7 +176,7 @@ class _InputPageState extends State<InputPage> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: <Widget>[
                       Text(
-                        'Age',
+                        'Age ',
                         style: GoogleFonts.atma(fontSize: 20.0),
                       ),
                       Text(
